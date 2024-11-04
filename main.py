@@ -1,39 +1,50 @@
-from vrp.VRPTW import VRPTW
+from model.VRPTW import VRPTW
 from folderScanner.scan_folder import scan_folder
-from test import test
+# from test import test
 from tqdm import tqdm
 
 def main():
     file_folder = "D:\\Mirror\\PostgraduateCourse\\01配送系统建模与分析\\Homework\\3\\solomon_100"
     file_list = scan_folder(file_folder)
     # result_folder = "result\\"
-    vrptw_list = []
+    vrptw_dict = {}
 
     for file_name in tqdm(file_list, desc="Solving"):
         result_folder = "result\\" + file_name.replace(".txt", "") + "\\"
 
-        vrptw = VRPTW() # 创建VRPTW类
+        vrptw = VRPTW()
 
         # 载入Solomon100数据
         vrptw.read_data(file_name, data_type = "solomon")
         # vrptw._read_solomon_data(file_name)
-        # print(vrptw) # test
+        # print(vrptw)
 
-        # 使用Solomon Insertion Algorithm生成初始解
-        vrptw.init_solution("SolomonInsertion")
-        vrptw.save_solution(result_folder + file_name.replace(".txt", "_solution.txt"))
+        # 尝试不同的种子顾客使用Solomon Insertion Algorithm生成初始解
+        for i in range(5):
+            vrptw_dict[file_name] = []
 
-        # 绘制地图并保存
-        vrptw.map(show_map = True, save_map = True, save_name = result_folder + file_name.replace(".txt", ".png"))
-        # vrptw.save_map(result_folder + file_name.replace(".txt", ".png"))
+            # 所罗门插入算法生成初始解
+            vrptw.init_solution("SolomonInsertion", seed = i)
 
-        # 运行遗传算法优化
-        # vrptw.optimize("GeneticAlgorithm"， max_iter = 1000)
-        vrptw.save_solution(result_folder + file_name.replace(".txt", "_solution.txt"))
+            # 保存解
+            vrptw.save_solution(result_folder + file_name.replace(".txt", f"_solution_{i}.txt"))
 
-        vrptw_list.append(vrptw)
+            # 绘制地图并保存
+            vrptw.map(show_map = False, save_map = True, save_name = result_folder + file_name.replace(".txt", f"_{i}.png"))
+
+            # 运行遗传算法优化
+            # vrptw.optimize("GeneticAlgorithm"， max_iter = 1000)
+
+            # 保存最优解
+            # vrptw.save_solution(result_folder + file_name.replace(".txt", f"_optimal_solution_{i}.txt"))
+
+            # 输出最优解
+            # print(f"{file_name} - Seed {i} - Optimal Solution:")
+            # vrptw.print_solution()
+
+            vrptw_dict[file_name].append(vrptw)
 
 
 if __name__ == '__main__':
-    # main()
-    test()
+    # test()
+    main()

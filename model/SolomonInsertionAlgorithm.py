@@ -1,12 +1,12 @@
 import random
 from xmlrpc.client import MAXINT
 
-from vrp.Customer import Customer
-from vrp.Vehicle import Vehicle
+from model.Customer import Customer
+from model.Vehicle import Vehicle
 
-def distance(customer1, customer2):
+def euclidean_distance(customer1: Customer, customer2: Customer):
     """
-    计算customer1和customer2的距离
+    计算customer1和customer2的欧式距离
     :param customer1:
     :param customer2:
     :return:
@@ -14,7 +14,10 @@ def distance(customer1, customer2):
     return ((customer1.x - customer2.x) ** 2 + (customer1.y - customer2.y) ** 2) ** 0.5
 
 
-def distance_cost(customer, vehicle, position, mu: float = 1.0):
+def distance_cost(customer: Customer,
+                  vehicle: Vehicle,
+                  position: int,
+                  mu: float = 1.0):
     """
     计算将customer插入到position位置后的距离成本
     :param mu: 原路径距离的系数
@@ -23,14 +26,14 @@ def distance_cost(customer, vehicle, position, mu: float = 1.0):
     :param position:
     :return:
     """
-    cost = (distance(vehicle.get_route()[position - 1], customer)
-                     + distance(customer, vehicle.get_route()[position])
-                     - mu * distance(vehicle.get_route()[position - 1], vehicle.get_route()[position]))
+    cost = (euclidean_distance(vehicle.get_route()[position - 1], customer)
+            + euclidean_distance(customer, vehicle.get_route()[position])
+            - mu * euclidean_distance(vehicle.get_route()[position - 1], vehicle.get_route()[position]))
     return cost
 
 
-def find_best_position(customer,
-                       vehicle,
+def find_best_position(customer: Customer,
+                       vehicle: Vehicle,
                        alpha: float = 0.5,
                        mu: float = 1.0) -> (int, int):
     """
@@ -41,8 +44,10 @@ def find_best_position(customer,
     :param vehicle:
     :return:
     """
+
     best_position = None
     min_c1 = MAXINT
+
     for i in range(1, len(vehicle.get_route())):
 
         # 如果可以插在i位置后
@@ -66,7 +71,9 @@ def find_best_position(customer,
     return best_position, min_c1
 
 
-def time_cost(customer, vehicle, position):
+def time_cost(customer: Customer,
+              vehicle: Vehicle,
+              position: int):
     """
     计算将customer插入到position位置后, 后面一位顾客的开始服务时间增量
     :param customer:
@@ -107,6 +114,7 @@ def find_seed_customer(customer_list: list[Customer],
     :param seed: 寻找初始点的策略: 0-随机, 1-最远距离, 2-最远时间, 3-最远距离+最远时间
     :return: 第一个客户的索引
     """
+
     # 只有一个顾客
     if len(customer_list) == 1:
         # print(f"Only one customer, select it as initial point")
@@ -131,7 +139,7 @@ def find_seed_customer(customer_list: list[Customer],
         max_customer_index = 0
 
         for i in range(len(customer_list)):
-            distance_to_depot = distance(customer_list[i], depot)
+            distance_to_depot = euclidean_distance(customer_list[i], depot)
 
             if distance_to_depot > max_distance:
                 max_distance = distance_to_depot
@@ -148,7 +156,7 @@ def find_seed_customer(customer_list: list[Customer],
         min_customer_index = 0
 
         for i in range(len(customer_list)):
-            distance_to_depot = distance(customer_list[i], depot)
+            distance_to_depot = euclidean_distance(customer_list[i], depot)
 
             if distance_to_depot < min_distance:
                 min_distance = distance_to_depot
@@ -194,6 +202,7 @@ def find_seed_customer(customer_list: list[Customer],
         print("Unsupported seed strategy")
         raise ValueError("Unsupported seed strategy")
 
+
 def solomon_insertion_algorithm(customer_list: list[Customer],
                                 vehicle: Vehicle,
                                 seed: int = 0,
@@ -210,6 +219,7 @@ def solomon_insertion_algorithm(customer_list: list[Customer],
     :param lmbda:
     :return:
     """
+
     # 路径为空, 初始化路径
     if vehicle.is_empty():
 
@@ -245,11 +255,7 @@ def solomon_insertion_algorithm(customer_list: list[Customer],
                 best_position, min_c1 = find_best_position(customer, vehicle, alpha=alpha, mu=mu)
 
                 # 计算c2
-                c2 = lmbda * distance(vehicle.get_depot(), customer) - min_c1
-
-                # if c2 < 0:
-                #     print(f"Inserting customer {customer.id} into vehicle {vehicle.id} is not optimal, c2 is negative")
-                #     continue
+                c2 = lmbda * euclidean_distance(vehicle.get_depot(), customer) - min_c1
 
                 # 加入待插入列表
                 customer_tobe_inserted[customer] = (best_position, c2)

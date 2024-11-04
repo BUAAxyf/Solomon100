@@ -1,12 +1,13 @@
 import os
 
-from vrp.SolomonInsertionAlgorithm import solomon_insertion_algorithm
-from vrp.Customer import Customer
-from vrp.Vehicle import Vehicle
+from model.SolomonInsertionAlgorithm import solomon_insertion_algorithm
+from model.Customer import Customer
+from model.Vehicle import Vehicle
 
 import matplotlib.pyplot as plt
 
 class VRPTW:
+
     def __init__(self) -> None:
         self.file_name = None # 文件名
         self.vehicle_number = None # 车辆数量
@@ -16,13 +17,16 @@ class VRPTW:
         self.customer_tobe_served = [] # 待服务的客户列表
         self.vehicle_list = [] # 车辆列表
         self.vehicle_empty = [] # 空车辆列表
-        self.solution = None # 解
+        self.solution = {} # 解
+        self.evaluation_dict = {} # 解的质量字典
+
 
     def __str__(self) -> str:
         return (f"file_name: {self.file_name}, "
                 f"\n\tvehicle_number: {self.vehicle_number}, "
                 f"\n\tvehicle_capacity: {self.vehicle_capacity}, "
                 f"\n\tcustomer_list: {self.customer_list}")
+
 
     def _init_vehicle_list(self) -> None:
         """
@@ -95,6 +99,7 @@ class VRPTW:
         # 初始化车辆列表
         self._init_vehicle_list()
 
+
     def read_data(self, file_name: str,
                   data_type: str = 'solomon') -> bool:
         """
@@ -108,17 +113,20 @@ class VRPTW:
             print("Unsupported data type")
             raise ValueError("Unsupported data type")
 
+
     def get_customer_list(self) -> list:
         """
         获取客户列表
         """
         return self.customer_list
 
+
     def get_vehicle_list(self) -> list:
         """
         获取车辆列表
         """
         return self.vehicle_list
+
 
     def map(self,
             show_map: bool = True,
@@ -157,6 +165,7 @@ class VRPTW:
         # 显示地图
         if show_map:
             plt.show()
+
 
     def init_solution(self, solution_type: str,
                       mu: float = 1.0,
@@ -197,6 +206,7 @@ class VRPTW:
 
         return True
 
+
     def get_solution(self) -> dict[str, list[int]]:
         """
         获取解
@@ -209,7 +219,8 @@ class VRPTW:
 
         return solution
 
-    def show_solution(self):
+
+    def print_solution(self):
         """
         显示解
         :return:
@@ -220,20 +231,32 @@ class VRPTW:
             print(f"{vehicle.id}", end="\t")
             print(vehicle.get_route_id_list())
 
+
     def save_solution(self,
                       file_name: str = 'VRPTW_Solution.txt',
-                      evaluate: bool = False):
+                      evaluation: bool = True):
         """
         将解的字典按行保存在文件file_name中
+        :param evaluation:
         :param file_name:
         :return:
         """
         os.makedirs(os.path.dirname(file_name), exist_ok=True)
 
-        if evaluate:
+        # 若还未评价解, 则先评价解
+        if evaluation and not self.evaluation_dict:
             self.evaluate_solution()
 
         with open(file_name, 'w') as file:
+
+            # 保存解的评价
+            if evaluation:
+                file.write("Evaluation\n")
+                for key, value in self.evaluation_dict.items():
+                    file.write(f"{key}\t{value}\n")
+                file.write("\n")
+
+            # 保存解
             file.write("VehicleID\tCustomerID\n")
             for vehicle in self.vehicle_list:
                 file.write(f"{vehicle.id}\to-")
@@ -241,17 +264,31 @@ class VRPTW:
                     file.write(f"{customer_id}-")
                 file.write("d\n")
 
-    def evaluate_solution(self):
+
+    def evaluate_solution(self,
+                          distance: bool = True,
+                          vehicle_number: bool = True,) -> dict[str, float]:
         """
         评价解的质量
+        :param distance: 总服务距离
+        :param vehicle_number: 使用的车辆数量
         :return:
         """
-        # 总服务时间
-        total_service_time = 0
-        for vehicle in self.vehicle_list:
-            total_service_time += vehicle.get_service_time()
 
+        # 计算总服务距离
+        if distance:
+            total_distance = 0
+            for vehicle in self.vehicle_list:
+                total_distance += vehicle.get_route_distance()
+            self.evaluation_dict['Total Distance'] = total_distance
 
-        pass
+        if vehicle_number:
+            used_vehicle_number = 0
+            for vehicle in self.vehicle_list:
+                if not vehicle.is_empty():
+                    used_vehicle_number += 1
+            self.evaluation_dict['Used Vehicle Number'] = used_vehicle_number
+
+        return self.evaluation_dict
 
 

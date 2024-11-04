@@ -1,4 +1,4 @@
-from vrp.VRPTW import VRPTW
+from model.VRPTW import VRPTW
 from folderScanner.scan_folder import scan_folder
 
 
@@ -23,21 +23,22 @@ def test():
     #     print(vehicle)
 
     # 生成初始解
-    vrptw.init_solution("SolomonInsertion", seed = 3)
+    vrptw.init_solution("SolomonInsertion", seed = 1)
 
     # 输出解
     # solution = vrptw.get_solution()
     # print(solution)
 
     # 展示解
-    vrptw.show_solution()
-
-    # 保存为文件
-    # vrptw.save_solution(result_folder + file_name.replace(".txt", "_solution.txt"))
+    vrptw.print_solution()
 
     # 解的可视化
     # vrptw.map(show_map = True,
     #           save_map = True,
     #           save_name = result_folder + file_name.replace(".txt", ".png"))
 
+    # 评价解效果
+    print(vrptw.evaluate_solution())
 
+    # 保存为文件
+    vrptw.save_solution(result_folder + file_name.replace(".txt", "_solution.txt"))

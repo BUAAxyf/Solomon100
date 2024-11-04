@@ -1,8 +1,12 @@
-from vrp.Customer import Customer
+from model.Customer import Customer
 
 
 
 class Vehicle:
+    """
+    车辆类
+    """
+
     def __init__(self, vehicle_id: int, capacity: int, depot: Customer):
         """
         初始化车辆
@@ -17,48 +21,35 @@ class Vehicle:
         self.depot = depot # 起点
         # self.print_route_id_list()
 
+
     def __str__(self) -> str:
         return (f"Vehicle {self.id}:"
                 f"\n\tcapacity {self.capacity}"
                 f"\n\troute {self.route}"
                 f"\n\tload {self.load}")
 
-    # def check_route_time(self) -> bool:
-    #     """
-    #     !已弃用!
-    #     判断路径的时间是否合法
-    #     :return:
-    #     """
-    #     current_time = 0
-    #     for customer in self.route:
-    #
-    #         # 没有到达开始时间, 等待开始
-    #         if current_time > customer.ready_time:
-    #             current_time = customer.ready_time
-    #
-    #         # 否则, 直接开始
-    #         else:
-    #             current_time += customer.service_time
-    #
-    #         # 服务结束后
-    #         # 超过结束时间
-    #         if current_time > customer.due_date:
-    #             return False
-    #
-    #         # 否则, 继续服务
-    #         else:
-    #             current_time += customer.service_time
-    #
-    #     return True
 
     def print_route_id_list(self):
         print(self.get_route_id_list())
 
+
     def get_route_id_list(self):
         return [customer.id for customer in self.route]
 
+
     def get_route_start_time_list(self):
         return [customer.start_time for customer in self.route]
+
+
+    def get_route_distance(self):
+
+        distance = 0
+
+        for i in range(len(self.route)-1):
+            distance += self.route[i].get_distance_to(self.route[i+1])
+
+        return distance
+
 
     def check_load(self) -> bool:
         """
@@ -69,6 +60,7 @@ class Vehicle:
             return False
         else:
             return True
+
 
     def can_serve_customer_at_position(self, customer: Customer, position: int) -> bool:
         """
@@ -86,6 +78,7 @@ class Vehicle:
         self.remove_position(position)
 
         return correct
+
 
     def can_serve_customer(self, customer: Customer) -> bool:
         """
@@ -105,6 +98,7 @@ class Vehicle:
         # print(f"vehicle {self.id} Cannot serve customer {customer.id} due to NO AVAILABLE POSITION")
         return False
 
+
     def is_empty(self) -> bool:
         """
         判断车辆是否为空
@@ -118,6 +112,7 @@ class Vehicle:
         else:
             return False
 
+
     def get_route(self) -> list[Customer]:
         """
         获取路径
@@ -125,12 +120,14 @@ class Vehicle:
         """
         return self.route
 
+
     def get_depot(self):
         """
         获取车辆的起点
         :return:
         """
         return self.depot
+
 
     def get_route_location(self) -> (list[int], list[int]):
         """
@@ -146,6 +143,7 @@ class Vehicle:
             y_list.append(customer.y)
 
         return x_list, y_list
+
 
     def add_customer(self, customer: Customer, position: int) -> bool:
         """
@@ -185,6 +183,7 @@ class Vehicle:
 
         return correct
 
+
     def remove_position(self, position: int) -> bool:
         """
         删除position位置的顾客, 并更新路径时间. 返回是否违背约束, !即使违反约束也会更新路径!
@@ -215,6 +214,7 @@ class Vehicle:
             correct = False
 
         return correct
+
 
     def update_route_time(self) -> bool:
         """
