@@ -308,3 +308,14 @@ class VRPTW:
         return self.evaluation_dict
 
 
+    def optimize(self,
+                solution_type: str,
+                iteration_number: int = 100) -> bool:
+        """
+        优化解
+        ### 有待开发 ###
+        :param solution_type: 优化方法
+        :param iteration_number: 迭代次数
+        :return:
+        """
+        pass

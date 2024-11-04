@@ -34,8 +34,8 @@ def main():
                       save_map = True,
                       save_name = result_folder + file_name.replace(".txt", f"_{i}.png"))
 
-            # 运行遗传算法优化
-            # vrptw.optimize("GeneticAlgorithm"， max_iter = 1000)
+            # 运行VNS算法优化
+            # vrptw.optimize("VNS"， max_iter = 1000)
 
             # 保存最优解
             # vrptw.save_solution(result_folder + file_name.replace(".txt", f"_optimal_solution_{i}.txt"))
@@ -44,7 +44,10 @@ def main():
             # print(f"{file_name} - Seed {i} - Optimal Solution:")
             # vrptw.print_solution()
 
-            vrptw_dict[file_name].append(vrptw)
+            # vrptw_dict[file_name].append(vrptw)
+
+            # 回收内存
+            del vrptw
 
 
 if __name__ == '__main__':
