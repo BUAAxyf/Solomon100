@@ -114,6 +114,20 @@ class VRPTW:
             raise ValueError("Unsupported data type")
 
 
+    def clear_all(self) -> None:
+        """
+        清空数据和解
+        """
+        pass
+
+
+    def clear_solution(self) -> None:
+        """
+        清空解
+        """
+        pass
+
+
     def get_customer_list(self) -> list:
         """
         获取客户列表
@@ -166,6 +180,8 @@ class VRPTW:
         if show_map:
             plt.show()
 
+        plt.close()
+
 
     def init_solution(self, solution_type: str,
                       mu: float = 1.0,
@@ -183,20 +199,20 @@ class VRPTW:
 
                 # 有顾客, 没空车
                 if not self.vehicle_empty:
-                    print("No available vehicle, some customers may not be served")
+                    # print("No available vehicle, some customers may not be served")
                     return False
 
                 # 有顾客, 有空车
                 else:
                     vehicle_to_serve = self.vehicle_empty.pop(0)
-                    print(f"Vehicle {vehicle_to_serve.id} is serving")
+                    # print(f"Vehicle {vehicle_to_serve.id} is serving")
                     vehicle_to_serve, self.customer_tobe_served = solomon_insertion_algorithm(self.customer_tobe_served,
                                                                                               vehicle_to_serve,
                                                                                               mu = mu,
                                                                                               alpha = alpha,
                                                                                               lmbda = lmbda,
                                                                                               seed = seed)
-                    print(f"Vehicle {vehicle_to_serve.id} finally serves {vehicle_to_serve.get_route_id_list()}")
+                    # print(f"Vehicle {vehicle_to_serve.id} finally serves {vehicle_to_serve.get_route_id_list()}")
 
         else:
             print("Unsupported solution type")

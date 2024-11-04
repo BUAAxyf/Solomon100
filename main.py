@@ -4,7 +4,7 @@ from folderScanner.scan_folder import scan_folder
 from tqdm import tqdm
 
 def main():
-    file_folder = "D:\\Mirror\\PostgraduateCourse\\01配送系统建模与分析\\Homework\\3\\solomon_100"
+    file_folder = "D:\\Project\\DeliveryCourse\\Solomon100\\data\\solomon_100"
     file_list = scan_folder(file_folder)
     # result_folder = "result\\"
     vrptw_dict = {}
@@ -12,16 +12,16 @@ def main():
     for file_name in tqdm(file_list, desc="Solving"):
         result_folder = "result\\" + file_name.replace(".txt", "") + "\\"
 
-        vrptw = VRPTW()
-
-        # 载入Solomon100数据
-        vrptw.read_data(file_name, data_type = "solomon")
-        # vrptw._read_solomon_data(file_name)
-        # print(vrptw)
-
         # 尝试不同的种子顾客使用Solomon Insertion Algorithm生成初始解
         for i in range(5):
             vrptw_dict[file_name] = []
+
+            vrptw = VRPTW()
+
+            # 载入Solomon100数据
+            vrptw.read_data(file_folder + "\\" + file_name, data_type="solomon")
+            # vrptw._read_solomon_data(file_name)
+            # print(vrptw)
 
             # 所罗门插入算法生成初始解
             vrptw.init_solution("SolomonInsertion", seed = i)
@@ -30,7 +30,9 @@ def main():
             vrptw.save_solution(result_folder + file_name.replace(".txt", f"_solution_{i}.txt"))
 
             # 绘制地图并保存
-            vrptw.map(show_map = False, save_map = True, save_name = result_folder + file_name.replace(".txt", f"_{i}.png"))
+            vrptw.map(show_map = False,
+                      save_map = True,
+                      save_name = result_folder + file_name.replace(".txt", f"_{i}.png"))
 
             # 运行遗传算法优化
             # vrptw.optimize("GeneticAlgorithm"， max_iter = 1000)

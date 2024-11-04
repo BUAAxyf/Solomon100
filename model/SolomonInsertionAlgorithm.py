@@ -122,13 +122,13 @@ def find_seed_customer(customer_list: list[Customer],
 
     # 没有
     elif len(customer_list) == 0:
-        print(f"No customer to be selected as initial point")
+        # print(f"No customer to be selected as initial point")
         raise ValueError("No customer to be selected as initial point")
 
     # 随机策略
     if seed == 0:
         random_index = random.randint(0, len(customer_list)-1)
-        print(f"Randomly select customer {customer_list[random_index].id} as initial point")
+        # print(f"Randomly select customer {customer_list[random_index].id} as initial point")
         return random_index
 
     # 最远距离策略
@@ -199,7 +199,7 @@ def find_seed_customer(customer_list: list[Customer],
 
     # 非法种子
     else:
-        print("Unsupported seed strategy")
+        # print("Unsupported seed strategy")
         raise ValueError("Unsupported seed strategy")
 
 
@@ -225,7 +225,7 @@ def solomon_insertion_algorithm(customer_list: list[Customer],
 
         # 初始顾客索引
         init_customer_index = find_seed_customer(customer_list, vehicle.get_depot(), seed=seed) # 寻找初始点
-        print(f"Initialize vehicle {vehicle.id} with customer {customer_list[init_customer_index].id}")
+        # print(f"Initialize vehicle {vehicle.id} with customer {customer_list[init_customer_index].id}")
 
         # 初始顾客加入vehicle路径
         vehicle.add_customer(customer_list[init_customer_index], 1) # 加入初始顾客
@@ -240,16 +240,16 @@ def solomon_insertion_algorithm(customer_list: list[Customer],
 
         # 算每个顾客的min_c1和c2
         for customer in customer_list:
-            print(f"Evaluating customer {customer.id}...")
+            # print(f"Evaluating customer {customer.id}...")
 
             # 如果customer不可以插入
             if not vehicle.can_serve_customer(customer):
-                print(f"Cannot insert customer {customer.id} into vehicle {vehicle.id}")
+                # print(f"Cannot insert customer {customer.id} into vehicle {vehicle.id}")
                 continue
 
             # customer可以被服务
             else:
-                print(f"Can insert customer {customer.id} into vehicle {vehicle.id}, calculating min_c1 and c2...")
+                # print(f"Can insert customer {customer.id} into vehicle {vehicle.id}, calculating min_c1 and c2...")
 
                 # 找到最佳插入位置, 计算该位置的c1(即为min_c1)
                 best_position, min_c1 = find_best_position(customer, vehicle, alpha=alpha, mu=mu)
@@ -262,7 +262,7 @@ def solomon_insertion_algorithm(customer_list: list[Customer],
 
         # 如果没有可以插入的点
         if not customer_tobe_inserted:
-            print(f"No customer can be inserted into vehicle {vehicle.id}")
+            # print(f"No customer can be inserted into vehicle {vehicle.id}")
             break
 
         # 找到c2最大的顾客
@@ -280,14 +280,14 @@ def solomon_insertion_algorithm(customer_list: list[Customer],
 
         # 如果可以插入的点都不如单独服务
         if not best_customer:
-            print(f"Need to distribute the remaining customers to other vehicles")
-            print(f"vehicle {vehicle.id} route: ", vehicle.get_route_id_list())
+            # print(f"Need to distribute the remaining customers to other vehicles")
+            # print(f"vehicle {vehicle.id} route: ", vehicle.get_route_id_list())
             break
 
         # 加入顾客
         vehicle.add_customer(best_customer, best_position)
         customer_list.remove(best_customer)
-        print(f"Insert customer {best_customer.id} at position {best_position} of vehicle {vehicle.id}")
-        print("current route: ", vehicle.get_route_id_list())
+        # print(f"Insert customer {best_customer.id} at position {best_position} of vehicle {vehicle.id}")
+        # print("current route: ", vehicle.get_route_id_list())
 
     return vehicle, customer_list
