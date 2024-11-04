@@ -12,7 +12,7 @@ class VRPTW:
         self.file_name = None # 文件名
         self.vehicle_number = None # 车辆数量
         self.vehicle_capacity = None # 车辆容量
-        self.depot = None # 起点
+        self.depot: Customer = None # 起点
         self.customer_list = [] # 客户列表
         self.customer_tobe_served = [] # 待服务的客户列表
         self.vehicle_list = [] # 车辆列表

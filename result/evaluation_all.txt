@@ -1,0 +1,841 @@
+All Evaluation:
+C101.txt-Seed-0: 
+Total Distance: 1315.164938160684
+Used Vehicle Number: 11
+C101.txt-Seed-1: 
+Total Distance: 984.0618398082158
+Used Vehicle Number: 10
+C101.txt-Seed-2: 
+Total Distance: 1496.7068055824154
+Used Vehicle Number: 11
+C101.txt-Seed-3: 
+Total Distance: 1043.5688867272954
+Used Vehicle Number: 10
+C101.txt-Seed-4: 
+Total Distance: 1232.8198357661531
+Used Vehicle Number: 11
+C102.txt-Seed-0: 
+Total Distance: 1610.48506171846
+Used Vehicle Number: 12
+C102.txt-Seed-1: 
+Total Distance: 1538.719898290434
+Used Vehicle Number: 11
+C102.txt-Seed-2: 
+Total Distance: 1972.0270522636838
+Used Vehicle Number: 11
+C102.txt-Seed-3: 
+Total Distance: 1777.8697838816106
+Used Vehicle Number: 11
+C102.txt-Seed-4: 
+Total Distance: 1649.7728891419606
+Used Vehicle Number: 12
+C103.txt-Seed-0: 
+Total Distance: 1633.546440232523
+Used Vehicle Number: 11
+C103.txt-Seed-1: 
+Total Distance: 1598.644475616249
+Used Vehicle Number: 10
+C103.txt-Seed-2: 
+Total Distance: 1776.9786325353002
+Used Vehicle Number: 11
+C103.txt-Seed-3: 
+Total Distance: 1853.3462449983178
+Used Vehicle Number: 11
+C103.txt-Seed-4: 
+Total Distance: 1745.014180398229
+Used Vehicle Number: 11
+C104.txt-Seed-0: 
+Total Distance: 1742.5403363717107
+Used Vehicle Number: 10
+C104.txt-Seed-1: 
+Total Distance: 1406.9411405869967
+Used Vehicle Number: 10
+C104.txt-Seed-2: 
+Total Distance: 1696.011952891553
+Used Vehicle Number: 10
+C104.txt-Seed-3: 
+Total Distance: 1449.5481673589006
+Used Vehicle Number: 10
+C104.txt-Seed-4: 
+Total Distance: 1438.6279978943808
+Used Vehicle Number: 11
+C105.txt-Seed-0: 
+Total Distance: 1739.3802282040954
+Used Vehicle Number: 11
+C105.txt-Seed-1: 
+Total Distance: 1272.902557865881
+Used Vehicle Number: 10
+C105.txt-Seed-2: 
+Total Distance: 1873.2429471154899
+Used Vehicle Number: 10
+C105.txt-Seed-3: 
+Total Distance: 2388.811053837376
+Used Vehicle Number: 10
+C105.txt-Seed-4: 
+Total Distance: 1563.8722022938946
+Used Vehicle Number: 12
+C106.txt-Seed-0: 
+Total Distance: 1369.69047441895
+Used Vehicle Number: 10
+C106.txt-Seed-1: 
+Total Distance: 1202.6799738971151
+Used Vehicle Number: 10
+C106.txt-Seed-2: 
+Total Distance: 2033.7756676340857
+Used Vehicle Number: 11
+C106.txt-Seed-3: 
+Total Distance: 2323.7554541454533
+Used Vehicle Number: 10
+C106.txt-Seed-4: 
+Total Distance: 1842.8460577115625
+Used Vehicle Number: 12
+C107.txt-Seed-0: 
+Total Distance: 1526.1366795002737
+Used Vehicle Number: 10
+C107.txt-Seed-1: 
+Total Distance: 1283.6741200087963
+Used Vehicle Number: 10
+C107.txt-Seed-2: 
+Total Distance: 1720.2026553871042
+Used Vehicle Number: 10
+C107.txt-Seed-3: 
+Total Distance: 2173.7351599712847
+Used Vehicle Number: 10
+C107.txt-Seed-4: 
+Total Distance: 1639.7581578808845
+Used Vehicle Number: 11
+C108.txt-Seed-0: 
+Total Distance: 1630.5677792995016
+Used Vehicle Number: 10
+C108.txt-Seed-1: 
+Total Distance: 1223.5404707929654
+Used Vehicle Number: 10
+C108.txt-Seed-2: 
+Total Distance: 1908.0800607541917
+Used Vehicle Number: 10
+C108.txt-Seed-3: 
+Total Distance: 1760.5314097402702
+Used Vehicle Number: 10
+C108.txt-Seed-4: 
+Total Distance: 1629.1291010807927
+Used Vehicle Number: 11
+C109.txt-Seed-0: 
+Total Distance: 1208.9213763203766
+Used Vehicle Number: 10
+C109.txt-Seed-1: 
+Total Distance: 1369.9999568624403
+Used Vehicle Number: 10
+C109.txt-Seed-2: 
+Total Distance: 1575.5045744064191
+Used Vehicle Number: 10
+C109.txt-Seed-3: 
+Total Distance: 1850.3849804390043
+Used Vehicle Number: 10
+C109.txt-Seed-4: 
+Total Distance: 1503.9024930515334
+Used Vehicle Number: 11
+C201.txt-Seed-0: 
+Total Distance: 1273.9021615816087
+Used Vehicle Number: 3
+C201.txt-Seed-1: 
+Total Distance: 1107.9619582364785
+Used Vehicle Number: 3
+C201.txt-Seed-2: 
+Total Distance: 1052.5920912216698
+Used Vehicle Number: 3
+C201.txt-Seed-3: 
+Total Distance: 1137.1101576612723
+Used Vehicle Number: 3
+C201.txt-Seed-4: 
+Total Distance: 898.2588981470593
+Used Vehicle Number: 3
+C202.txt-Seed-0: 
+Total Distance: 1427.500119279924
+Used Vehicle Number: 4
+C202.txt-Seed-1: 
+Total Distance: 1368.7614636832627
+Used Vehicle Number: 4
+C202.txt-Seed-2: 
+Total Distance: 1442.0249224857794
+Used Vehicle Number: 5
+C202.txt-Seed-3: 
+Total Distance: 1508.5865767663552
+Used Vehicle Number: 4
+C202.txt-Seed-4: 
+Total Distance: 1505.410028801154
+Used Vehicle Number: 5
+C203.txt-Seed-0: 
+Total Distance: 1704.2732024030756
+Used Vehicle Number: 4
+C203.txt-Seed-1: 
+Total Distance: 1637.3043286227685
+Used Vehicle Number: 4
+C203.txt-Seed-2: 
+Total Distance: 1698.4915473104602
+Used Vehicle Number: 4
+C203.txt-Seed-3: 
+Total Distance: 1637.5215170750896
+Used Vehicle Number: 4
+C203.txt-Seed-4: 
+Total Distance: 1468.2787520710026
+Used Vehicle Number: 4
+C204.txt-Seed-0: 
+Total Distance: 1578.7909179354979
+Used Vehicle Number: 4
+C204.txt-Seed-1: 
+Total Distance: 1446.5392752113144
+Used Vehicle Number: 3
+C204.txt-Seed-2: 
+Total Distance: 1483.4756522030045
+Used Vehicle Number: 4
+C204.txt-Seed-3: 
+Total Distance: 1410.7395590451813
+Used Vehicle Number: 3
+C204.txt-Seed-4: 
+Total Distance: 1471.7140214430672
+Used Vehicle Number: 4
+C205.txt-Seed-0: 
+Total Distance: 1087.4114694157158
+Used Vehicle Number: 3
+C205.txt-Seed-1: 
+Total Distance: 827.7573853084074
+Used Vehicle Number: 3
+C205.txt-Seed-2: 
+Total Distance: 927.5238794714286
+Used Vehicle Number: 3
+C205.txt-Seed-3: 
+Total Distance: 1038.900584398702
+Used Vehicle Number: 3
+C205.txt-Seed-4: 
+Total Distance: 840.4027725194597
+Used Vehicle Number: 3
+C206.txt-Seed-0: 
+Total Distance: 1473.1821882743416
+Used Vehicle Number: 4
+C206.txt-Seed-1: 
+Total Distance: 1228.0031290811742
+Used Vehicle Number: 4
+C206.txt-Seed-2: 
+Total Distance: 1372.547289701075
+Used Vehicle Number: 4
+C206.txt-Seed-3: 
+Total Distance: 1320.861384765038
+Used Vehicle Number: 4
+C206.txt-Seed-4: 
+Total Distance: 1105.068203533536
+Used Vehicle Number: 3
+C207.txt-Seed-0: 
+Total Distance: 1274.9583102023562
+Used Vehicle Number: 4
+C207.txt-Seed-1: 
+Total Distance: 1189.1812839083045
+Used Vehicle Number: 3
+C207.txt-Seed-2: 
+Total Distance: 1433.94103670531
+Used Vehicle Number: 4
+C207.txt-Seed-3: 
+Total Distance: 1272.0341053299655
+Used Vehicle Number: 4
+C207.txt-Seed-4: 
+Total Distance: 987.919979667091
+Used Vehicle Number: 3
+C208.txt-Seed-0: 
+Total Distance: 1179.2919648196598
+Used Vehicle Number: 4
+C208.txt-Seed-1: 
+Total Distance: 990.5715024814974
+Used Vehicle Number: 4
+C208.txt-Seed-2: 
+Total Distance: 1356.611008415158
+Used Vehicle Number: 4
+C208.txt-Seed-3: 
+Total Distance: 1420.6718615443622
+Used Vehicle Number: 4
+C208.txt-Seed-4: 
+Total Distance: 883.8193634066273
+Used Vehicle Number: 3
+R101.txt-Seed-0: 
+Total Distance: 2367.0850425102317
+Used Vehicle Number: 10
+R101.txt-Seed-1: 
+Total Distance: 2321.3280502688235
+Used Vehicle Number: 10
+R101.txt-Seed-2: 
+Total Distance: 2447.728060994342
+Used Vehicle Number: 9
+R101.txt-Seed-3: 
+Total Distance: 2312.3823520661063
+Used Vehicle Number: 10
+R101.txt-Seed-4: 
+Total Distance: 2199.1327555869684
+Used Vehicle Number: 10
+R102.txt-Seed-0: 
+Total Distance: 2239.9888388122367
+Used Vehicle Number: 9
+R102.txt-Seed-1: 
+Total Distance: 2238.965502940426
+Used Vehicle Number: 9
+R102.txt-Seed-2: 
+Total Distance: 2057.215778929859
+Used Vehicle Number: 9
+R102.txt-Seed-3: 
+Total Distance: 2206.5215370618653
+Used Vehicle Number: 9
+R102.txt-Seed-4: 
+Total Distance: 1933.5994348867084
+Used Vehicle Number: 10
+R103.txt-Seed-0: 
+Total Distance: 1825.6859603063917
+Used Vehicle Number: 8
+R103.txt-Seed-1: 
+Total Distance: 2126.551482187869
+Used Vehicle Number: 9
+R103.txt-Seed-2: 
+Total Distance: 1696.1750642608656
+Used Vehicle Number: 8
+R103.txt-Seed-3: 
+Total Distance: 2154.3556698520647
+Used Vehicle Number: 9
+R103.txt-Seed-4: 
+Total Distance: 1692.1962149810884
+Used Vehicle Number: 8
+R104.txt-Seed-0: 
+Total Distance: 1407.1558431148242
+Used Vehicle Number: 8
+R104.txt-Seed-1: 
+Total Distance: 1547.7500112956534
+Used Vehicle Number: 8
+R104.txt-Seed-2: 
+Total Distance: 1495.546088021574
+Used Vehicle Number: 8
+R104.txt-Seed-3: 
+Total Distance: 1724.4048501703778
+Used Vehicle Number: 8
+R104.txt-Seed-4: 
+Total Distance: 1334.7976101960076
+Used Vehicle Number: 8
+R105.txt-Seed-0: 
+Total Distance: 1905.2901993369733
+Used Vehicle Number: 8
+R105.txt-Seed-1: 
+Total Distance: 2023.7003039936671
+Used Vehicle Number: 8
+R105.txt-Seed-2: 
+Total Distance: 1941.1987919851567
+Used Vehicle Number: 8
+R105.txt-Seed-3: 
+Total Distance: 2098.9731486713295
+Used Vehicle Number: 9
+R105.txt-Seed-4: 
+Total Distance: 1632.6768948127478
+Used Vehicle Number: 8
+R106.txt-Seed-0: 
+Total Distance: 1872.268830869636
+Used Vehicle Number: 8
+R106.txt-Seed-1: 
+Total Distance: 1802.5671148605356
+Used Vehicle Number: 8
+R106.txt-Seed-2: 
+Total Distance: 1859.925038726034
+Used Vehicle Number: 8
+R106.txt-Seed-3: 
+Total Distance: 2036.2058991083545
+Used Vehicle Number: 8
+R106.txt-Seed-4: 
+Total Distance: 1617.7081777759176
+Used Vehicle Number: 8
+R107.txt-Seed-0: 
+Total Distance: 1694.897651492671
+Used Vehicle Number: 8
+R107.txt-Seed-1: 
+Total Distance: 1779.408107471305
+Used Vehicle Number: 8
+R107.txt-Seed-2: 
+Total Distance: 1657.0494249705557
+Used Vehicle Number: 8
+R107.txt-Seed-3: 
+Total Distance: 1782.8705679992795
+Used Vehicle Number: 8
+R107.txt-Seed-4: 
+Total Distance: 1449.522006747574
+Used Vehicle Number: 8
+R108.txt-Seed-0: 
+Total Distance: 1342.4671689778183
+Used Vehicle Number: 8
+R108.txt-Seed-1: 
+Total Distance: 1509.8872215881
+Used Vehicle Number: 8
+R108.txt-Seed-2: 
+Total Distance: 1448.9680031578498
+Used Vehicle Number: 8
+R108.txt-Seed-3: 
+Total Distance: 1525.153881064233
+Used Vehicle Number: 8
+R108.txt-Seed-4: 
+Total Distance: 1294.5327085708054
+Used Vehicle Number: 8
+R109.txt-Seed-0: 
+Total Distance: 1697.96854762021
+Used Vehicle Number: 8
+R109.txt-Seed-1: 
+Total Distance: 1552.0333712614495
+Used Vehicle Number: 8
+R109.txt-Seed-2: 
+Total Distance: 1682.8030351341183
+Used Vehicle Number: 8
+R109.txt-Seed-3: 
+Total Distance: 1856.9542741898297
+Used Vehicle Number: 8
+R109.txt-Seed-4: 
+Total Distance: 1469.554262675517
+Used Vehicle Number: 8
+R110.txt-Seed-0: 
+Total Distance: 1548.874553177883
+Used Vehicle Number: 8
+R110.txt-Seed-1: 
+Total Distance: 1617.67759603256
+Used Vehicle Number: 8
+R110.txt-Seed-2: 
+Total Distance: 1753.6899731709248
+Used Vehicle Number: 8
+R110.txt-Seed-3: 
+Total Distance: 1687.7186550672523
+Used Vehicle Number: 8
+R110.txt-Seed-4: 
+Total Distance: 1443.485269796421
+Used Vehicle Number: 8
+R111.txt-Seed-0: 
+Total Distance: 1474.80720607955
+Used Vehicle Number: 8
+R111.txt-Seed-1: 
+Total Distance: 1619.2482153483843
+Used Vehicle Number: 8
+R111.txt-Seed-2: 
+Total Distance: 1517.9129438857099
+Used Vehicle Number: 8
+R111.txt-Seed-3: 
+Total Distance: 1930.1088247919165
+Used Vehicle Number: 8
+R111.txt-Seed-4: 
+Total Distance: 1506.176319457618
+Used Vehicle Number: 8
+R112.txt-Seed-0: 
+Total Distance: 1410.6068163041318
+Used Vehicle Number: 8
+R112.txt-Seed-1: 
+Total Distance: 1380.022414121706
+Used Vehicle Number: 8
+R112.txt-Seed-2: 
+Total Distance: 1394.5857254636298
+Used Vehicle Number: 8
+R112.txt-Seed-3: 
+Total Distance: 1342.184280463076
+Used Vehicle Number: 8
+R112.txt-Seed-4: 
+Total Distance: 1200.8051244555297
+Used Vehicle Number: 8
+R201.txt-Seed-0: 
+Total Distance: 2305.900892372469
+Used Vehicle Number: 2
+R201.txt-Seed-1: 
+Total Distance: 2322.4130849388002
+Used Vehicle Number: 2
+R201.txt-Seed-2: 
+Total Distance: 1882.348465037457
+Used Vehicle Number: 2
+R201.txt-Seed-3: 
+Total Distance: 2350.4134665613224
+Used Vehicle Number: 2
+R201.txt-Seed-4: 
+Total Distance: 1908.3932316629757
+Used Vehicle Number: 2
+R202.txt-Seed-0: 
+Total Distance: 1903.8864857257058
+Used Vehicle Number: 2
+R202.txt-Seed-1: 
+Total Distance: 1980.3481506845906
+Used Vehicle Number: 2
+R202.txt-Seed-2: 
+Total Distance: 1871.953995223756
+Used Vehicle Number: 2
+R202.txt-Seed-3: 
+Total Distance: 2048.3473598610462
+Used Vehicle Number: 2
+R202.txt-Seed-4: 
+Total Distance: 1831.5781794194113
+Used Vehicle Number: 2
+R203.txt-Seed-0: 
+Total Distance: 1640.2251752099614
+Used Vehicle Number: 2
+R203.txt-Seed-1: 
+Total Distance: 1811.7424636808582
+Used Vehicle Number: 2
+R203.txt-Seed-2: 
+Total Distance: 1548.8086347720657
+Used Vehicle Number: 2
+R203.txt-Seed-3: 
+Total Distance: 1854.7922603146296
+Used Vehicle Number: 2
+R203.txt-Seed-4: 
+Total Distance: 1486.6571492190017
+Used Vehicle Number: 2
+R204.txt-Seed-0: 
+Total Distance: 1263.6367075246326
+Used Vehicle Number: 2
+R204.txt-Seed-1: 
+Total Distance: 1450.0299367244897
+Used Vehicle Number: 2
+R204.txt-Seed-2: 
+Total Distance: 1322.846790788993
+Used Vehicle Number: 2
+R204.txt-Seed-3: 
+Total Distance: 1348.7139913341307
+Used Vehicle Number: 2
+R204.txt-Seed-4: 
+Total Distance: 1275.2617031733641
+Used Vehicle Number: 2
+R205.txt-Seed-0: 
+Total Distance: 1629.1863325679494
+Used Vehicle Number: 2
+R205.txt-Seed-1: 
+Total Distance: 1760.1915238126421
+Used Vehicle Number: 2
+R205.txt-Seed-2: 
+Total Distance: 1617.3786448820624
+Used Vehicle Number: 2
+R205.txt-Seed-3: 
+Total Distance: 1577.161763759923
+Used Vehicle Number: 2
+R205.txt-Seed-4: 
+Total Distance: 1599.390677572642
+Used Vehicle Number: 2
+R206.txt-Seed-0: 
+Total Distance: 1657.262675199322
+Used Vehicle Number: 2
+R206.txt-Seed-1: 
+Total Distance: 1586.5365316750633
+Used Vehicle Number: 2
+R206.txt-Seed-2: 
+Total Distance: 1470.991506145113
+Used Vehicle Number: 2
+R206.txt-Seed-3: 
+Total Distance: 1477.81708872862
+Used Vehicle Number: 2
+R206.txt-Seed-4: 
+Total Distance: 1413.446041877133
+Used Vehicle Number: 2
+R207.txt-Seed-0: 
+Total Distance: 1413.6693328624253
+Used Vehicle Number: 2
+R207.txt-Seed-1: 
+Total Distance: 1487.2715066240326
+Used Vehicle Number: 2
+R207.txt-Seed-2: 
+Total Distance: 1280.2259453434403
+Used Vehicle Number: 2
+R207.txt-Seed-3: 
+Total Distance: 1418.9144224429288
+Used Vehicle Number: 2
+R207.txt-Seed-4: 
+Total Distance: 1311.3816332062377
+Used Vehicle Number: 2
+R208.txt-Seed-0: 
+Total Distance: 1161.3049012894985
+Used Vehicle Number: 2
+R208.txt-Seed-1: 
+Total Distance: 1270.2552337476707
+Used Vehicle Number: 2
+R208.txt-Seed-2: 
+Total Distance: 1152.2919611904786
+Used Vehicle Number: 2
+R208.txt-Seed-3: 
+Total Distance: 1257.8179550018863
+Used Vehicle Number: 2
+R208.txt-Seed-4: 
+Total Distance: 1110.3510009382421
+Used Vehicle Number: 2
+R209.txt-Seed-0: 
+Total Distance: 1689.8976282562826
+Used Vehicle Number: 2
+R209.txt-Seed-1: 
+Total Distance: 1535.879035514055
+Used Vehicle Number: 2
+R209.txt-Seed-2: 
+Total Distance: 1638.6513945692855
+Used Vehicle Number: 2
+R209.txt-Seed-3: 
+Total Distance: 1655.351849085725
+Used Vehicle Number: 2
+R209.txt-Seed-4: 
+Total Distance: 1453.5251716088212
+Used Vehicle Number: 2
+R210.txt-Seed-0: 
+Total Distance: 1585.303686750658
+Used Vehicle Number: 2
+R210.txt-Seed-1: 
+Total Distance: 1822.158002405403
+Used Vehicle Number: 2
+R210.txt-Seed-2: 
+Total Distance: 1667.3091873159156
+Used Vehicle Number: 2
+R210.txt-Seed-3: 
+Total Distance: 1715.748562577955
+Used Vehicle Number: 2
+R210.txt-Seed-4: 
+Total Distance: 1530.8347417169825
+Used Vehicle Number: 2
+R211.txt-Seed-0: 
+Total Distance: 1258.1546451241
+Used Vehicle Number: 2
+R211.txt-Seed-1: 
+Total Distance: 1286.7114977573033
+Used Vehicle Number: 2
+R211.txt-Seed-2: 
+Total Distance: 1358.6664139586094
+Used Vehicle Number: 2
+R211.txt-Seed-3: 
+Total Distance: 1455.0182924488508
+Used Vehicle Number: 2
+R211.txt-Seed-4: 
+Total Distance: 1235.396424523142
+Used Vehicle Number: 2
+RC101.txt-Seed-0: 
+Total Distance: 2534.596093146696
+Used Vehicle Number: 10
+RC101.txt-Seed-1: 
+Total Distance: 2096.0207749180076
+Used Vehicle Number: 9
+RC101.txt-Seed-2: 
+Total Distance: 2372.6238947183274
+Used Vehicle Number: 9
+RC101.txt-Seed-3: 
+Total Distance: 2755.762677069783
+Used Vehicle Number: 9
+RC101.txt-Seed-4: 
+Total Distance: 2027.54613974117
+Used Vehicle Number: 9
+RC102.txt-Seed-0: 
+Total Distance: 2483.9177960421544
+Used Vehicle Number: 10
+RC102.txt-Seed-1: 
+Total Distance: 1977.1442417231278
+Used Vehicle Number: 9
+RC102.txt-Seed-2: 
+Total Distance: 1995.363707898467
+Used Vehicle Number: 9
+RC102.txt-Seed-3: 
+Total Distance: 2487.805857893321
+Used Vehicle Number: 9
+RC102.txt-Seed-4: 
+Total Distance: 1850.2945860501143
+Used Vehicle Number: 9
+RC103.txt-Seed-0: 
+Total Distance: 1951.1478687331135
+Used Vehicle Number: 10
+RC103.txt-Seed-1: 
+Total Distance: 1921.7715531341457
+Used Vehicle Number: 9
+RC103.txt-Seed-2: 
+Total Distance: 1954.2136345857684
+Used Vehicle Number: 9
+RC103.txt-Seed-3: 
+Total Distance: 2359.641887705894
+Used Vehicle Number: 10
+RC103.txt-Seed-4: 
+Total Distance: 1820.1020234088453
+Used Vehicle Number: 9
+RC104.txt-Seed-0: 
+Total Distance: 1582.4184407367318
+Used Vehicle Number: 9
+RC104.txt-Seed-1: 
+Total Distance: 1659.0662710831828
+Used Vehicle Number: 9
+RC104.txt-Seed-2: 
+Total Distance: 1743.4659544064482
+Used Vehicle Number: 9
+RC104.txt-Seed-3: 
+Total Distance: 1697.8271845800746
+Used Vehicle Number: 9
+RC104.txt-Seed-4: 
+Total Distance: 1471.14191970912
+Used Vehicle Number: 9
+RC105.txt-Seed-0: 
+Total Distance: 2385.2725479850737
+Used Vehicle Number: 9
+RC105.txt-Seed-1: 
+Total Distance: 1984.6532168555564
+Used Vehicle Number: 9
+RC105.txt-Seed-2: 
+Total Distance: 2450.861138834262
+Used Vehicle Number: 9
+RC105.txt-Seed-3: 
+Total Distance: 2596.9364791011844
+Used Vehicle Number: 10
+RC105.txt-Seed-4: 
+Total Distance: 2031.8347166038745
+Used Vehicle Number: 10
+RC106.txt-Seed-0: 
+Total Distance: 2159.0171069949283
+Used Vehicle Number: 9
+RC106.txt-Seed-1: 
+Total Distance: 1895.3104377522036
+Used Vehicle Number: 9
+RC106.txt-Seed-2: 
+Total Distance: 1981.6265974931114
+Used Vehicle Number: 9
+RC106.txt-Seed-3: 
+Total Distance: 2466.6384343127356
+Used Vehicle Number: 9
+RC106.txt-Seed-4: 
+Total Distance: 1719.5931820397532
+Used Vehicle Number: 9
+RC107.txt-Seed-0: 
+Total Distance: 1840.9782962547247
+Used Vehicle Number: 9
+RC107.txt-Seed-1: 
+Total Distance: 1778.0161325273432
+Used Vehicle Number: 9
+RC107.txt-Seed-2: 
+Total Distance: 1775.927712502137
+Used Vehicle Number: 9
+RC107.txt-Seed-3: 
+Total Distance: 2076.1785112815905
+Used Vehicle Number: 9
+RC107.txt-Seed-4: 
+Total Distance: 1731.7509970125034
+Used Vehicle Number: 9
+RC108.txt-Seed-0: 
+Total Distance: 1612.8720582078352
+Used Vehicle Number: 9
+RC108.txt-Seed-1: 
+Total Distance: 1606.611634211771
+Used Vehicle Number: 9
+RC108.txt-Seed-2: 
+Total Distance: 1624.609973558598
+Used Vehicle Number: 9
+RC108.txt-Seed-3: 
+Total Distance: 1738.096551423531
+Used Vehicle Number: 9
+RC108.txt-Seed-4: 
+Total Distance: 1470.0222678017471
+Used Vehicle Number: 9
+RC201.txt-Seed-0: 
+Total Distance: 2230.5268780931283
+Used Vehicle Number: 2
+RC201.txt-Seed-1: 
+Total Distance: 2167.4885955237282
+Used Vehicle Number: 2
+RC201.txt-Seed-2: 
+Total Distance: 2395.592434585712
+Used Vehicle Number: 2
+RC201.txt-Seed-3: 
+Total Distance: 2989.6259504499217
+Used Vehicle Number: 2
+RC201.txt-Seed-4: 
+Total Distance: 1982.01898922789
+Used Vehicle Number: 2
+RC202.txt-Seed-0: 
+Total Distance: 2316.1460796069796
+Used Vehicle Number: 2
+RC202.txt-Seed-1: 
+Total Distance: 2069.0552329427646
+Used Vehicle Number: 2
+RC202.txt-Seed-2: 
+Total Distance: 2267.7896929681337
+Used Vehicle Number: 2
+RC202.txt-Seed-3: 
+Total Distance: 2387.1625632604496
+Used Vehicle Number: 2
+RC202.txt-Seed-4: 
+Total Distance: 1955.841523514655
+Used Vehicle Number: 2
+RC203.txt-Seed-0: 
+Total Distance: 1852.862048784537
+Used Vehicle Number: 2
+RC203.txt-Seed-1: 
+Total Distance: 1998.775322324979
+Used Vehicle Number: 2
+RC203.txt-Seed-2: 
+Total Distance: 1983.6041377543397
+Used Vehicle Number: 2
+RC203.txt-Seed-3: 
+Total Distance: 1976.2438085362032
+Used Vehicle Number: 2
+RC203.txt-Seed-4: 
+Total Distance: 1692.6890349234131
+Used Vehicle Number: 2
+RC204.txt-Seed-0: 
+Total Distance: 1495.825622215966
+Used Vehicle Number: 2
+RC204.txt-Seed-1: 
+Total Distance: 1336.8346533865983
+Used Vehicle Number: 2
+RC204.txt-Seed-2: 
+Total Distance: 1440.5800410439833
+Used Vehicle Number: 3
+RC204.txt-Seed-3: 
+Total Distance: 1347.211807274649
+Used Vehicle Number: 2
+RC204.txt-Seed-4: 
+Total Distance: 1266.0280582591367
+Used Vehicle Number: 2
+RC205.txt-Seed-0: 
+Total Distance: 2242.995093971247
+Used Vehicle Number: 2
+RC205.txt-Seed-1: 
+Total Distance: 2082.6632474196913
+Used Vehicle Number: 2
+RC205.txt-Seed-2: 
+Total Distance: 2339.317742204174
+Used Vehicle Number: 2
+RC205.txt-Seed-3: 
+Total Distance: 2527.1021393348014
+Used Vehicle Number: 2
+RC205.txt-Seed-4: 
+Total Distance: 2048.145306811656
+Used Vehicle Number: 2
+RC206.txt-Seed-0: 
+Total Distance: 2020.4230952834696
+Used Vehicle Number: 2
+RC206.txt-Seed-1: 
+Total Distance: 1857.7512614374573
+Used Vehicle Number: 2
+RC206.txt-Seed-2: 
+Total Distance: 1690.7837516710583
+Used Vehicle Number: 2
+RC206.txt-Seed-3: 
+Total Distance: 2122.1741449501096
+Used Vehicle Number: 2
+RC206.txt-Seed-4: 
+Total Distance: 1618.591837882987
+Used Vehicle Number: 2
+RC207.txt-Seed-0: 
+Total Distance: 1881.936097512565
+Used Vehicle Number: 2
+RC207.txt-Seed-1: 
+Total Distance: 1917.280322394481
+Used Vehicle Number: 3
+RC207.txt-Seed-2: 
+Total Distance: 1897.9683529735707
+Used Vehicle Number: 2
+RC207.txt-Seed-3: 
+Total Distance: 1809.9371736214507
+Used Vehicle Number: 2
+RC207.txt-Seed-4: 
+Total Distance: 1733.3052383587737
+Used Vehicle Number: 2
+RC208.txt-Seed-0: 
+Total Distance: 1358.7160330798517
+Used Vehicle Number: 2
+RC208.txt-Seed-1: 
+Total Distance: 1374.261910059573
+Used Vehicle Number: 2
+RC208.txt-Seed-2: 
+Total Distance: 1511.4773008007987
+Used Vehicle Number: 2
+RC208.txt-Seed-3: 
+Total Distance: 1635.8934022481344
+Used Vehicle Number: 2
+RC208.txt-Seed-4: 
+Total Distance: 1154.4579839204755
+Used Vehicle Number: 2

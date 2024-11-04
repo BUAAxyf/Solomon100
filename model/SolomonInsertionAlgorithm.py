@@ -111,7 +111,7 @@ def find_seed_customer(customer_list: list[Customer],
     从customer_list中找到当前车辆的第一个客户
     :param depot:
     :param customer_list:
-    :param seed: 寻找初始点的策略: 0-随机, 1-最远距离, 2-最远时间, 3-最远距离+最远时间
+    :param seed: 寻找初始点的策略: 0-随机, 1-最远距离, 2-最近距离, 3-最早截止时间, 4-最晚截止时间
     :return: 第一个客户的索引
     """
 

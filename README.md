@@ -1,11 +1,59 @@
 # Solomon100
 
-## 项目简介
-Solomon100 是一个用于解决带时间窗的车辆路径问题（VRPTW）的Python项目。该项目实现了Solomon插入算法，并提供了按照格式输入Solomon100算例和保存、可视化结果测试等功能。
+[TOC]
+
+## 关于项目
+Solomon100 是一个用于解决带时间窗和容量约束的车辆路径问题（CVRPTW）的Python项目。该项目实现了Solomon插入算法，并提供了按照格式输入Solomon100算例和保存、可视化结果测试等功能。
+
+项目开源：[BUAAxyf/Solomon100: Solve VRPTW using Solomon's 100 customers Problems Instances](https://github.com/BUAAxyf/Solomon100)
+
+## 作者信息
+
+- **[谢奕飞]** - 清华大学深圳国际研究生院 -  [邮箱](yifei_tse@163.com)
+
+查看 [贡献者列表](https://github.com/BUAAxyf/Solomon100/graphs/contributors) 以获取所有为该项目做出贡献的人。
+
+## 运行环境
+
+### 操作系统
+
+- Windows 10 家庭中文版（或更高版本）
+- 64 位操作系统
+
+### 硬件设备
+
+- 处理器：AMD Ryzen 7 4800H with Radeon Graphics 
+- 内存：至少 16 GB RAM
+
+### 软件依赖
+
+- Python 3.10.8 (tags/v3.10.8:aaaf517, Oct 11 2022, 16:50:30) [MSC v.1933 64 bit (AMD64)] on win32
+- 依赖库：项目依赖的第三方库将在 `requirements.txt` 文件中列出，可以通过 `pip install -r requirements.txt` 命令安装
+
+| 软件包          | 当前版本    | 最新版本（2024.11.4） |
+| --------------- | ----------- | --------------------- |
+| colorama        | 0.4.6       | 0.4.6                 |
+| contourpy       | 1.3.0       | 1.3.0                 |
+| cycler          | 0.12.1      | 0.12.1                |
+| fonttools       | 4.54.1      | 4.54.1                |
+| kiwisolver      | 1.4.7       | 1.4.7                 |
+| matplotlib      | 3.9.2       | 3.9.2                 |
+| numpy           | 2.1.2       | 2.1.3                 |
+| packaging       | 24.1        | 24.1                  |
+| pillow          | 11.0.0      | 11.0.0                |
+| pip             | 24.3.1      | 24.3.1                |
+| pyparsing       | 3.2.0       | 3.2.0                 |
+| python-dateutil | 2.9.0.post0 | 2.9.0.post0           |
+| setuptools      | 69.1.1      | 75.3.0                |
+| six             | 1.16.0      | 1.16.0                |
+| tqdm            | 4.66.6      | 4.66.6                |
+| wheel           | 0.42.0      | 0.44.0                |
 
 ## 数据集：以C101.txt为例
 
-`C101.txt` 是 Solomon 100 数据集中的一个实例，用于车辆路径问题带时间窗（VRPTW）的研究和算法测试。该数据集包含车辆、客户和相关参数的信息，是解决VRPTW问题的基础输入。
+数据集来自Solomon's 100 customers Problems Instances [VRP Web](https://www.bernabe.dorronsoro.es/vrp/index.html?/Problem_Instances/CVRPTWInstances.html)
+
+`C101.txt` 是 Solomon 100 数据集中的一个实例，用于CVRPTW的研究和算法测试。该数据集包含车辆、客户和相关参数的信息，是解决VRPTW问题的基础输入。
 
 ### 数据集概述
 
@@ -63,8 +111,9 @@ CUST NO.  XCOORD.   YCOORD.    DEMAND   READY TIME  DUE DATE   SERVICE   TIME
 - 确保数据集格式正确，以便项目中的算法能够正确读取和处理。
 - 数据集中的时间和坐标信息应根据实际应用场景进行调整。
 
-
 ## 项目结构
+
+### 文件目录
 
 ```
 Solomon100/
@@ -100,22 +149,114 @@ Solomon100/
 └── test.py
 ```
 
+### 内部结构
+
+其中，详细内部结构如下：
+
+```
+@startuml
+package "Solomon100 Project" {
+  
+  package "data" {
+    folder "solomon_100" {
+      file "C101.txt"
+      file "..."
+    }
+  }
+  
+  package "folderScanner" {
+    class __init__ {
+    }
+    class scan_folder {
+      function scan_folder(file_folder) : list[str]
+    }
+  }
+  
+  package "model" {
+    class __init__ {
+    }
+    class Customer {
+      attribute id : int
+      attribute x : int
+      attribute y : int
+      attribute demand : int
+      attribute ready_time : int
+      attribute due_date : int
+      attribute service_time : int
+      attribute start_time : int
+      function __init__(customer_info : dict) : None
+      function __str__() : str
+      function set_start_time(start_time : int) : None
+      function get_distance_to(customer : Customer) : float
+    }
+    
+    class Vehicle {
+      attribute id : int
+      attribute capacity : int
+      attribute route : list[Customer]
+      attribute load : int
+      attribute depot : Customer
+      function __init__(vehicle_id : int, capacity : int, depot : Customer) : None
+      function __str__() : str
+      function print_route_id_list() : None
+      function get_route_id_list() : list[int]
+      function get_route_start_time_list() : list[int]
+      function get_route_distance() : float
+      function check_load() : bool
+      function can_serve_customer_at_position(customer : Customer, position : int) : bool
+      function can_serve_customer(customer : Customer) : bool
+      function is_empty() : bool
+      function get_route() : list[Customer]
+      function get_depot() : Customer
+      function get_route_location() : (list[int], list[int])
+      function add_customer(customer : Customer, position : int) : bool
+      function remove_position(position : int) : bool
+      function update_route_time() : bool
+    }
+    
+    class SolomonInsertionAlgorithm {
+      function euclidean_distance(customer1 : Customer, customer2 : Customer) : float
+      function distance_cost(customer : Customer, vehicle : Vehicle, position : int, mu : float) : float
+      function find_best_position(customer : Customer, vehicle : Vehicle, alpha : float, mu : float) : (int, int)
+      function time_cost(customer : Customer, vehicle : Vehicle, position : int) : int
+      function find_seed_customer(customer_list : list[Customer], depot : Customer, seed : int) : int
+      function solomon_insertion_algorithm(customer_list : list[Customer], vehicle : Vehicle, seed : int, mu : float, alpha : float, lmbda : float) : (Vehicle, list[Customer])
+    }
+    
+    class VRPTW {
+      // VRPTW 类的属性和方法
+    }
+  }
+  
+  class main {
+    function main() : None
+    function solution_summary(vrptw_dict) : None
+  }
+  
+  file "README.md"
+  
+}
+
+@enduml
+```
+
 ## 主程序：main.py
 
 `main.py` 是本项目的主程序，它负责执行以下任务：
 
 1. 扫描指定文件夹中的所有数据文件。
-2. 对每个文件使用Solomon Insertion Algorithm生成初始解。
-3. 为每个文件的每个种子顾客保存初始解和地图。
-4. （可选）运行VNS算法优化初始解并保存最优解。
+2. 对每个文件使用Solomon Insertion Algorithm生成五个不同的初始解（通过改变种子顾客）。
+3. 保存每个初始解和对应的地图。
+4. 评估每个解的质量，并将结果保存到文件中。
+5. 生成所有实例的最优解的总距离的总结报告。
 
 ### 功能概述
 
 - **数据扫描**：使用 `folderScanner` 模块扫描 `data/solomon_100` 文件夹中的所有 `.txt` 文件。
-- **初始解生成**：对每个文件，使用Solomon Insertion Algorithm生成5个不同的初始解（通过改变种子顾客）。
+- **初始解生成**：对每个文件，使用Solomon Insertion Algorithm生成5个不同的初始解。
 - **结果保存**：将每个初始解和对应的地图保存到 `result` 文件夹中，文件名包含原始文件名和种子顾客编号。
-- **地图绘制**：绘制每个初始解的地图并保存为 `.png` 文件。
-- **算法优化**：（目前注释掉）使用VNS算法优化初始解，并保存最优解。
+- **解的评估**：评估每个解的总距离和使用的车辆数量，并将详细评估结果保存到 `evaluation_all.txt` 文件中。
+- **总结报告**：生成一个总结报告，包含所有实例的最优解的总距离和相关信息，保存到 `summary.txt` 文件中。
 
 ### 如何运行
 
