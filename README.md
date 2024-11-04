@@ -23,7 +23,7 @@ Solomon100 是一个用于解决带时间窗和容量约束的车辆路径问题
 ### 硬件设备
 
 - 处理器：AMD Ryzen 7 4800H with Radeon Graphics 
-- 内存：至少 16 GB RAM
+- 内存：16 GB RAM
 
 ### 软件依赖
 
