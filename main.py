@@ -12,10 +12,13 @@ def solution_summary(vrptw_dict):
     """
     # 文件头
     with open(f"result\\summary.txt", "w") as f:
-        f.write("Instance\tTotal Distance\tSeed\tVehicle Num\tSeed\n")
+        f.write("Instance\tMin Distance\tSeed\tMin Vehicle Num\tSeed\n")
 
     with open(f"result\\evaluation_all.txt", "w") as f:
         f.write("All Evaluation:\n")
+
+    total_distance = 0
+    total_vehicle_num = 0
 
     for file_name in tqdm(vrptw_dict, desc="Summary"):
         distances = []
@@ -32,15 +35,22 @@ def solution_summary(vrptw_dict):
             distances.append(evaluation_dict["Total Distance"])
             vehicle_num.append(evaluation_dict["Used Vehicle Number"])
 
-        # 找到最小的距离和车辆数量, 并记录索引
+        # 找最小的距离和车辆数量
         min_distance = min(distances)
         min_vehicle_num = min(vehicle_num)
         min_index = distances.index(min_distance)
         min_vehicle_index = vehicle_num.index(min_vehicle_num)
 
+        total_distance += min_distance
+        total_vehicle_num += min_vehicle_num
+
         # 写入文件
         with open(f"result\\summary.txt", "a") as f:
             f.write(f"{file_name}\t{min_distance}\t{min_index}\t{min_vehicle_num}\t{min_vehicle_index}\n")
+
+    with open(f"result\\summary.txt", "a") as f:
+        f.write("\n")
+        f.write(f"Average\t{total_distance / len(vrptw_dict)}\t-\t{total_vehicle_num / len(vrptw_dict)}\t-\n")
 
 
 def main():
