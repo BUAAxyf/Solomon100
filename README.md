@@ -3,13 +3,13 @@
 [TOC]
 
 ## 关于项目
-Solomon100 是一个用于解决带时间窗和容量约束的车辆路径问题（CVRPTW）的Python项目。该项目实现了Solomon插入算法，并提供了按照格式输入Solomon100算例和保存、可视化结果测试等功能。
+Solomon100 是一个用于解决带有**硬时间窗**和**容量约束**的车辆路径问题（CVRPTW）的Python项目。该项目实现了Solomon插入算法，并提供了按照格式输入Solomon100算例和保存、可视化结果测试等功能。
 
 项目开源：[BUAAxyf/Solomon100: Solve VRPTW using Solomon's 100 customers Problems Instances](https://github.com/BUAAxyf/Solomon100)
 
 ## 作者信息
 
-- **[谢奕飞]** - 清华大学深圳国际研究生院 -  [邮箱](yifei_tse@163.com)
+- **[谢奕飞]** - 清华大学深圳国际研究生院 -  [yifei_tse@163.com](yifei_tse@163.com)
 
 查看 [贡献者列表](https://github.com/BUAAxyf/Solomon100/graphs/contributors) 以获取所有为该项目做出贡献的人。
 
@@ -17,7 +17,7 @@ Solomon100 是一个用于解决带时间窗和容量约束的车辆路径问题
 
 ### 操作系统
 
-- Windows 10 家庭中文版（或更高版本）
+- Windows 10 家庭中文版
 - 64 位操作系统
 
 ### 硬件设备
