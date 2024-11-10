@@ -1,0 +1,337 @@
+C101.txt - Seed 0 - Time: 0.67s
+C101.txt - Seed 1 - Time: 0.74s
+C101.txt - Seed 2 - Time: 0.62s
+C101.txt - Seed 3 - Time: 0.71s
+C101.txt - Seed 4 - Time: 0.58s
+C101.txt - Average Time: 0.66s
+C102.txt - Seed 0 - Time: 0.79s
+C102.txt - Seed 1 - Time: 0.74s
+C102.txt - Seed 2 - Time: 0.71s
+C102.txt - Seed 3 - Time: 0.84s
+C102.txt - Seed 4 - Time: 0.67s
+C102.txt - Average Time: 0.75s
+C103.txt - Seed 0 - Time: 0.82s
+C103.txt - Seed 1 - Time: 0.78s
+C103.txt - Seed 2 - Time: 0.78s
+C103.txt - Seed 3 - Time: 0.81s
+C103.txt - Seed 4 - Time: 0.76s
+C103.txt - Average Time: 0.79s
+C104.txt - Seed 0 - Time: 0.80s
+C104.txt - Seed 1 - Time: 0.88s
+C104.txt - Seed 2 - Time: 0.84s
+C104.txt - Seed 3 - Time: 0.88s
+C104.txt - Seed 4 - Time: 0.80s
+C104.txt - Average Time: 0.84s
+C105.txt - Seed 0 - Time: 0.71s
+C105.txt - Seed 1 - Time: 0.71s
+C105.txt - Seed 2 - Time: 0.65s
+C105.txt - Seed 3 - Time: 0.70s
+C105.txt - Seed 4 - Time: 0.66s
+C105.txt - Average Time: 0.69s
+C106.txt - Seed 0 - Time: 0.74s
+C106.txt - Seed 1 - Time: 0.70s
+C106.txt - Seed 2 - Time: 0.71s
+C106.txt - Seed 3 - Time: 0.74s
+C106.txt - Seed 4 - Time: 0.70s
+C106.txt - Average Time: 0.72s
+C107.txt - Seed 0 - Time: 0.72s
+C107.txt - Seed 1 - Time: 0.73s
+C107.txt - Seed 2 - Time: 0.73s
+C107.txt - Seed 3 - Time: 0.77s
+C107.txt - Seed 4 - Time: 0.74s
+C107.txt - Average Time: 0.74s
+C108.txt - Seed 0 - Time: 0.76s
+C108.txt - Seed 1 - Time: 0.74s
+C108.txt - Seed 2 - Time: 0.70s
+C108.txt - Seed 3 - Time: 0.77s
+C108.txt - Seed 4 - Time: 0.70s
+C108.txt - Average Time: 0.73s
+C109.txt - Seed 0 - Time: 0.77s
+C109.txt - Seed 1 - Time: 0.75s
+C109.txt - Seed 2 - Time: 0.74s
+C109.txt - Seed 3 - Time: 0.81s
+C109.txt - Seed 4 - Time: 0.76s
+C109.txt - Average Time: 0.77s
+C201.txt - Seed 0 - Time: 5.27s
+C201.txt - Seed 1 - Time: 5.33s
+C201.txt - Seed 2 - Time: 5.53s
+C201.txt - Seed 3 - Time: 5.50s
+C201.txt - Seed 4 - Time: 4.82s
+C201.txt - Average Time: 5.29s
+C202.txt - Seed 0 - Time: 5.12s
+C202.txt - Seed 1 - Time: 5.34s
+C202.txt - Seed 2 - Time: 5.30s
+C202.txt - Seed 3 - Time: 5.27s
+C202.txt - Seed 4 - Time: 4.93s
+C202.txt - Average Time: 5.19s
+C203.txt - Seed 0 - Time: 5.29s
+C203.txt - Seed 1 - Time: 5.09s
+C203.txt - Seed 2 - Time: 5.20s
+C203.txt - Seed 3 - Time: 5.57s
+C203.txt - Seed 4 - Time: 5.06s
+C203.txt - Average Time: 5.24s
+C204.txt - Seed 0 - Time: 5.52s
+C204.txt - Seed 1 - Time: 5.41s
+C204.txt - Seed 2 - Time: 5.89s
+C204.txt - Seed 3 - Time: 6.19s
+C204.txt - Seed 4 - Time: 5.98s
+C204.txt - Average Time: 5.80s
+C205.txt - Seed 0 - Time: 5.21s
+C205.txt - Seed 1 - Time: 5.33s
+C205.txt - Seed 2 - Time: 5.23s
+C205.txt - Seed 3 - Time: 5.32s
+C205.txt - Seed 4 - Time: 5.63s
+C205.txt - Average Time: 5.34s
+C206.txt - Seed 0 - Time: 5.40s
+C206.txt - Seed 1 - Time: 5.21s
+C206.txt - Seed 2 - Time: 5.33s
+C206.txt - Seed 3 - Time: 5.45s
+C206.txt - Seed 4 - Time: 5.37s
+C206.txt - Average Time: 5.35s
+C207.txt - Seed 0 - Time: 5.56s
+C207.txt - Seed 1 - Time: 5.42s
+C207.txt - Seed 2 - Time: 5.48s
+C207.txt - Seed 3 - Time: 5.60s
+C207.txt - Seed 4 - Time: 5.12s
+C207.txt - Average Time: 5.43s
+C208.txt - Seed 0 - Time: 5.16s
+C208.txt - Seed 1 - Time: 5.33s
+C208.txt - Seed 2 - Time: 5.37s
+C208.txt - Seed 3 - Time: 5.28s
+C208.txt - Seed 4 - Time: 5.61s
+C208.txt - Average Time: 5.35s
+R101.txt - Seed 0 - Time: 0.33s
+R101.txt - Seed 1 - Time: 0.31s
+R101.txt - Seed 2 - Time: 0.34s
+R101.txt - Seed 3 - Time: 0.36s
+R101.txt - Seed 4 - Time: 0.31s
+R101.txt - Average Time: 0.33s
+R102.txt - Seed 0 - Time: 0.46s
+R102.txt - Seed 1 - Time: 0.45s
+R102.txt - Seed 2 - Time: 0.51s
+R102.txt - Seed 3 - Time: 0.53s
+R102.txt - Seed 4 - Time: 0.50s
+R102.txt - Average Time: 0.49s
+R103.txt - Seed 0 - Time: 0.62s
+R103.txt - Seed 1 - Time: 0.54s
+R103.txt - Seed 2 - Time: 0.60s
+R103.txt - Seed 3 - Time: 0.63s
+R103.txt - Seed 4 - Time: 0.58s
+R103.txt - Average Time: 0.59s
+R104.txt - Seed 0 - Time: 0.72s
+R104.txt - Seed 1 - Time: 0.66s
+R104.txt - Seed 2 - Time: 0.68s
+R104.txt - Seed 3 - Time: 0.70s
+R104.txt - Seed 4 - Time: 0.71s
+R104.txt - Average Time: 0.69s
+R105.txt - Seed 0 - Time: 0.44s
+R105.txt - Seed 1 - Time: 0.43s
+R105.txt - Seed 2 - Time: 0.47s
+R105.txt - Seed 3 - Time: 0.49s
+R105.txt - Seed 4 - Time: 0.43s
+R105.txt - Average Time: 0.45s
+R106.txt - Seed 0 - Time: 0.61s
+R106.txt - Seed 1 - Time: 0.54s
+R106.txt - Seed 2 - Time: 0.56s
+R106.txt - Seed 3 - Time: 0.58s
+R106.txt - Seed 4 - Time: 0.57s
+R106.txt - Average Time: 0.57s
+R107.txt - Seed 0 - Time: 0.63s
+R107.txt - Seed 1 - Time: 0.62s
+R107.txt - Seed 2 - Time: 0.69s
+R107.txt - Seed 3 - Time: 0.63s
+R107.txt - Seed 4 - Time: 0.66s
+R107.txt - Average Time: 0.65s
+R108.txt - Seed 0 - Time: 0.69s
+R108.txt - Seed 1 - Time: 0.68s
+R108.txt - Seed 2 - Time: 0.70s
+R108.txt - Seed 3 - Time: 0.66s
+R108.txt - Seed 4 - Time: 0.72s
+R108.txt - Average Time: 0.69s
+R109.txt - Seed 0 - Time: 0.53s
+R109.txt - Seed 1 - Time: 0.53s
+R109.txt - Seed 2 - Time: 0.51s
+R109.txt - Seed 3 - Time: 0.50s
+R109.txt - Seed 4 - Time: 0.51s
+R109.txt - Average Time: 0.51s
+R110.txt - Seed 0 - Time: 0.58s
+R110.txt - Seed 1 - Time: 0.55s
+R110.txt - Seed 2 - Time: 0.56s
+R110.txt - Seed 3 - Time: 0.53s
+R110.txt - Seed 4 - Time: 0.59s
+R110.txt - Average Time: 0.56s
+R111.txt - Seed 0 - Time: 0.64s
+R111.txt - Seed 1 - Time: 0.59s
+R111.txt - Seed 2 - Time: 0.63s
+R111.txt - Seed 3 - Time: 0.63s
+R111.txt - Seed 4 - Time: 0.64s
+R111.txt - Average Time: 0.63s
+R112.txt - Seed 0 - Time: 0.64s
+R112.txt - Seed 1 - Time: 0.59s
+R112.txt - Seed 2 - Time: 0.67s
+R112.txt - Seed 3 - Time: 0.65s
+R112.txt - Seed 4 - Time: 0.68s
+R112.txt - Average Time: 0.64s
+R201.txt - Seed 0 - Time: 4.56s
+R201.txt - Seed 1 - Time: 4.30s
+R201.txt - Seed 2 - Time: 4.74s
+R201.txt - Seed 3 - Time: 5.13s
+R201.txt - Seed 4 - Time: 5.07s
+R201.txt - Average Time: 4.76s
+R202.txt - Seed 0 - Time: 6.79s
+R202.txt - Seed 1 - Time: 6.41s
+R202.txt - Seed 2 - Time: 6.12s
+R202.txt - Seed 3 - Time: 7.03s
+R202.txt - Seed 4 - Time: 6.44s
+R202.txt - Average Time: 6.56s
+R203.txt - Seed 0 - Time: 7.36s
+R203.txt - Seed 1 - Time: 8.48s
+R203.txt - Seed 2 - Time: 8.19s
+R203.txt - Seed 3 - Time: 8.63s
+R203.txt - Seed 4 - Time: 7.96s
+R203.txt - Average Time: 8.12s
+R204.txt - Seed 0 - Time: 10.84s
+R204.txt - Seed 1 - Time: 10.50s
+R204.txt - Seed 2 - Time: 11.64s
+R204.txt - Seed 3 - Time: 11.70s
+R204.txt - Seed 4 - Time: 11.33s
+R204.txt - Average Time: 11.20s
+R205.txt - Seed 0 - Time: 6.51s
+R205.txt - Seed 1 - Time: 5.70s
+R205.txt - Seed 2 - Time: 6.34s
+R205.txt - Seed 3 - Time: 6.39s
+R205.txt - Seed 4 - Time: 7.06s
+R205.txt - Average Time: 6.40s
+R206.txt - Seed 0 - Time: 8.72s
+R206.txt - Seed 1 - Time: 7.26s
+R206.txt - Seed 2 - Time: 8.46s
+R206.txt - Seed 3 - Time: 8.32s
+R206.txt - Seed 4 - Time: 8.15s
+R206.txt - Average Time: 8.18s
+R207.txt - Seed 0 - Time: 9.33s
+R207.txt - Seed 1 - Time: 8.58s
+R207.txt - Seed 2 - Time: 10.42s
+R207.txt - Seed 3 - Time: 9.70s
+R207.txt - Seed 4 - Time: 9.73s
+R207.txt - Average Time: 9.55s
+R208.txt - Seed 0 - Time: 11.74s
+R208.txt - Seed 1 - Time: 11.15s
+R208.txt - Seed 2 - Time: 11.69s
+R208.txt - Seed 3 - Time: 11.00s
+R208.txt - Seed 4 - Time: 12.50s
+R208.txt - Average Time: 11.62s
+R209.txt - Seed 0 - Time: 7.88s
+R209.txt - Seed 1 - Time: 6.43s
+R209.txt - Seed 2 - Time: 7.16s
+R209.txt - Seed 3 - Time: 7.50s
+R209.txt - Seed 4 - Time: 6.75s
+R209.txt - Average Time: 7.14s
+R210.txt - Seed 0 - Time: 7.99s
+R210.txt - Seed 1 - Time: 7.55s
+R210.txt - Seed 2 - Time: 7.49s
+R210.txt - Seed 3 - Time: 8.63s
+R210.txt - Seed 4 - Time: 7.96s
+R210.txt - Average Time: 7.93s
+R211.txt - Seed 0 - Time: 6.97s
+R211.txt - Seed 1 - Time: 7.48s
+R211.txt - Seed 2 - Time: 8.54s
+R211.txt - Seed 3 - Time: 8.36s
+R211.txt - Seed 4 - Time: 8.27s
+R211.txt - Average Time: 7.92s
+RC101.txt - Seed 0 - Time: 0.44s
+RC101.txt - Seed 1 - Time: 0.41s
+RC101.txt - Seed 2 - Time: 0.45s
+RC101.txt - Seed 3 - Time: 0.44s
+RC101.txt - Seed 4 - Time: 0.45s
+RC101.txt - Average Time: 0.44s
+RC102.txt - Seed 0 - Time: 0.51s
+RC102.txt - Seed 1 - Time: 0.46s
+RC102.txt - Seed 2 - Time: 0.57s
+RC102.txt - Seed 3 - Time: 0.53s
+RC102.txt - Seed 4 - Time: 0.55s
+RC102.txt - Average Time: 0.53s
+RC103.txt - Seed 0 - Time: 0.57s
+RC103.txt - Seed 1 - Time: 0.56s
+RC103.txt - Seed 2 - Time: 0.63s
+RC103.txt - Seed 3 - Time: 0.57s
+RC103.txt - Seed 4 - Time: 0.58s
+RC103.txt - Average Time: 0.58s
+RC104.txt - Seed 0 - Time: 0.59s
+RC104.txt - Seed 1 - Time: 0.62s
+RC104.txt - Seed 2 - Time: 0.61s
+RC104.txt - Seed 3 - Time: 0.62s
+RC104.txt - Seed 4 - Time: 0.70s
+RC104.txt - Average Time: 0.63s
+RC105.txt - Seed 0 - Time: 0.50s
+RC105.txt - Seed 1 - Time: 0.48s
+RC105.txt - Seed 2 - Time: 0.51s
+RC105.txt - Seed 3 - Time: 0.45s
+RC105.txt - Seed 4 - Time: 0.49s
+RC105.txt - Average Time: 0.49s
+RC106.txt - Seed 0 - Time: 0.54s
+RC106.txt - Seed 1 - Time: 0.48s
+RC106.txt - Seed 2 - Time: 0.52s
+RC106.txt - Seed 3 - Time: 0.46s
+RC106.txt - Seed 4 - Time: 0.50s
+RC106.txt - Average Time: 0.50s
+RC107.txt - Seed 0 - Time: 0.58s
+RC107.txt - Seed 1 - Time: 0.54s
+RC107.txt - Seed 2 - Time: 0.60s
+RC107.txt - Seed 3 - Time: 0.58s
+RC107.txt - Seed 4 - Time: 0.55s
+RC107.txt - Average Time: 0.57s
+RC108.txt - Seed 0 - Time: 0.58s
+RC108.txt - Seed 1 - Time: 0.57s
+RC108.txt - Seed 2 - Time: 0.64s
+RC108.txt - Seed 3 - Time: 0.54s
+RC108.txt - Seed 4 - Time: 0.62s
+RC108.txt - Average Time: 0.59s
+RC201.txt - Seed 0 - Time: 4.05s
+RC201.txt - Seed 1 - Time: 3.90s
+RC201.txt - Seed 2 - Time: 4.13s
+RC201.txt - Seed 3 - Time: 4.17s
+RC201.txt - Seed 4 - Time: 4.17s
+RC201.txt - Average Time: 4.09s
+RC202.txt - Seed 0 - Time: 5.44s
+RC202.txt - Seed 1 - Time: 4.51s
+RC202.txt - Seed 2 - Time: 4.92s
+RC202.txt - Seed 3 - Time: 4.52s
+RC202.txt - Seed 4 - Time: 5.53s
+RC202.txt - Average Time: 4.98s
+RC203.txt - Seed 0 - Time: 6.35s
+RC203.txt - Seed 1 - Time: 6.41s
+RC203.txt - Seed 2 - Time: 6.47s
+RC203.txt - Seed 3 - Time: 6.80s
+RC203.txt - Seed 4 - Time: 7.89s
+RC203.txt - Average Time: 6.79s
+RC204.txt - Seed 0 - Time: 9.80s
+RC204.txt - Seed 1 - Time: 9.02s
+RC204.txt - Seed 2 - Time: 8.74s
+RC204.txt - Seed 3 - Time: 9.01s
+RC204.txt - Seed 4 - Time: 8.84s
+RC204.txt - Average Time: 9.08s
+RC205.txt - Seed 0 - Time: 4.25s
+RC205.txt - Seed 1 - Time: 4.84s
+RC205.txt - Seed 2 - Time: 4.51s
+RC205.txt - Seed 3 - Time: 4.57s
+RC205.txt - Seed 4 - Time: 4.67s
+RC205.txt - Average Time: 4.57s
+RC206.txt - Seed 0 - Time: 5.56s
+RC206.txt - Seed 1 - Time: 4.92s
+RC206.txt - Seed 2 - Time: 5.28s
+RC206.txt - Seed 3 - Time: 5.08s
+RC206.txt - Seed 4 - Time: 5.47s
+RC206.txt - Average Time: 5.26s
+RC207.txt - Seed 0 - Time: 5.28s
+RC207.txt - Seed 1 - Time: 5.65s
+RC207.txt - Seed 2 - Time: 5.23s
+RC207.txt - Seed 3 - Time: 6.03s
+RC207.txt - Seed 4 - Time: 6.36s
+RC207.txt - Average Time: 5.71s
+RC208.txt - Seed 0 - Time: 6.96s
+RC208.txt - Seed 1 - Time: 6.49s
+RC208.txt - Seed 2 - Time: 6.98s
+RC208.txt - Seed 3 - Time: 7.12s
+RC208.txt - Seed 4 - Time: 6.49s
+RC208.txt - Average Time: 6.81s
+Total Time: 987.45s

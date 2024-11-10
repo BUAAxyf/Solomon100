@@ -145,6 +145,17 @@ class Vehicle:
         return x_list, y_list
 
 
+    def get_start_time_list(self) -> list:
+        """
+        获取时间窗列表
+        :return:
+        """
+        timewindow_list = []
+        for customer in self.route:
+            timewindow_list.append(customer.get_start_time())
+        return timewindow_list
+
+
     def add_customer(self, customer: Customer, position: int) -> bool:
         """
         原路径在position位置之前插入客户customer, 并更新路径时间. 返回是否违背约束, !即使违反约束也会更新路径!
@@ -242,6 +253,9 @@ class Vehicle:
             if current_time > customer.due_date:
                 # print(f"Cannot update route time for vehicle {self.id} due to TIME CONSTRAINT")
                 correct_time = False
+
+            # 移动到下一个顾客
+            current_time += customer.get_distance_to(self.route[self.route.index(customer) + 1])
 
         # 超过终点depot的结束时间
         if current_time > self.depot.due_date:

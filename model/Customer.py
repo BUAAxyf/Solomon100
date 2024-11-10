@@ -27,6 +27,10 @@ class Customer:
         self.start_time = start_time
 
 
+    def get_start_time(self) -> int:
+        return self.start_time
+
+
     def get_distance_to(self, customer: 'Customer'):
         """
         计算到customer的距离
@@ -34,3 +38,5 @@ class Customer:
         :return:
         """
         return ((self.x - customer.x) ** 2 + (self.y - customer.y) ** 2) ** 0.5
+
+

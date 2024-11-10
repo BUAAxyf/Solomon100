@@ -2,8 +2,10 @@ import time
 
 from model.VRPTW import VRPTW
 from folderScanner.scan_folder import scan_folder
-# from test import test
+
 from tqdm import tqdm
+
+from test import test
 
 
 def solution_summary(vrptw_dict):
@@ -58,9 +60,10 @@ def main():
     file_list = scan_folder(file_folder)
     # result_folder = "result\\"
     vrptw_dict = {}
+    total_time = 0
 
-    for file_name in tqdm(file_list, desc="Solving"):
-    # for file_name in file_list:
+    # for file_name in tqdm(file_list, desc="Solving"):
+    for file_name in file_list:
         result_folder = "result\\" + file_name.replace(".txt", "") + "\\"
         vrptw_dict[file_name] = []
         time_list = []
@@ -82,8 +85,9 @@ def main():
 
             # 计时结束
             end_time = time.time()
-            # print(f"{file_name} - Seed {i} - Time: {end_time - start_time:.2f}s")
+            print(f"{file_name} - Seed {i} - Time: {end_time - start_time:.2f}s")
             time_list.append(end_time - start_time)
+            total_time += end_time - start_time
 
             # 保存解
             vrptw.save_solution(result_folder + file_name.replace(".txt", f"_solution_{i}.txt"))
@@ -109,11 +113,13 @@ def main():
             # del vrptw
 
         # 输出平均运行时间
-        # print(f"{file_name} - Average Time: {sum(time_list) / len(time_list):.2f}s")
+        print(f"{file_name} - Average Time: {sum(time_list) / len(time_list):.2f}s")
+
+    print(f"Total Time: {total_time:.2f}s")
 
     # 总结
     solution_summary(vrptw_dict)
 
 if __name__ == '__main__':
-    # test()
-    main()
+    test()
+    # main()
